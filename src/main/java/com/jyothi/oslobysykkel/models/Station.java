@@ -1,9 +1,11 @@
 package com.jyothi.oslobysykkel.models;
 
+import org.codehaus.jackson.annotate.JsonProperty;
 import java.util.List;
 
 public class Station {
 
+    @JsonProperty("stationName")
     private long id;
 
     public Availability getAvailability() {
